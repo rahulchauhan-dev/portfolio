@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+#grad{
+  display: inline-table;
+  padding-bottom: 120px !important;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab,#42275a,#f7bb97,#ddd6f3);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 16s ease infinite;
+  -moz-animation: AnimationName 16s ease infinite;
+  animation: AnimationName 16s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+
+.progress{
+ 
+  width: 60%;
+  height: 1.3rem;
+
+}
+
+.progress-bar{
+  background-color: #343a40 !important;
+}
+
+.nav-link{
+
+  text-transform: uppercase;
+	color: white !important;
+  font-weight: 600;
+  font-size: large;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2.5px;
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  transition: width .3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.navbar-brand{
+  color: white !important;
+  font-size: 40px !important;
+  font-weight: bold !important;
+}
+
+main{
+  min-width: fit-content;
+  background-color: #080808;
+background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+#nav{
+  background-color: transparent;
+}
+
+#navcolorChange{
+  background-color: black;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  transition: background-color 400ms linear;
+  box-shadow: 0 6px 5px -5px #333;
+  padding-top: 1rem !important;
+  padding-right: 2rem !important; 
+  transition: padding-right 400ms linear;
+
+}
+
+.nav-item > .active {
+  text-decoration: none;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(61, 61, 61); 
+  border-radius: 20px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+#totop:hover{
+  color: #333;
+}
+
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.navbar-toggler-icon{
+  width: 3rem !important;
+}
+
+#gradbuttons:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
+}
+
+@media only screen and (max-width: 576px) {
+  #nav{
+    padding-right: 1rem !important;
+  }
+  #hero-card{
+    max-width: 100% !important;
+  }
+  
+  .nav-link{
+    font-size: xx-large !important;
+  }
+  #hero-container{
+    margin-top: 15rem !important;
+    margin-bottom: 4rem !important;
+  }
+  #hero-row{
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+  }
+  #totop{
+    font-size: 3rem !important;
+  }
+  #greet,#intro,#about{
+    font-size: 3rem !important;
+  }
+  #gradbuttons{
+    font-size: x-large !important;
+  }
+  h2{
+    font-size: 3.5rem !important;
+  }
+  
+  #project-title{
+    font-size: xx-large !important;
+  }
+  #project-desc{
+    font-size: xx-large !important;
+  }
+  #email{
+    font-size: xx-large !important;
+  }
+}
+
+
+#avatar:hover  {
+	cursor: pointer;
+}
+
+
+svg{
+  height: 80px;
+  width: 80px;
+  /*filter: drop-shadow(0px 5px 2px rgb(0 0 0 / 0.4));*/
+}
+
+@media only screen and (max-width: 767px)
+{
+  .navbar-nav{
+    padding-bottom: 3rem !important;
+    padding-top: 3rem !important;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    justify-content: center;
+  }
+  .navbar-toggler{
+    margin-right: 2rem;
+  }
+
+  .nav-item{
+    padding-bottom: 3rem !important;
+  }
+
+  #nav{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
