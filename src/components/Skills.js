@@ -14,7 +14,7 @@ const Skills = ({ id }) => {
     useEffect(() => {
         var skilldiv = document.getElementById("skills");
         window.addEventListener("scroll", () => {
-            if (window.pageYOffset <= skilldiv.offsetTop) {
+            if (window.pageYOffset <= skilldiv.offsetTop && window.pageYOffset >= skilldiv.offsetHeight) {
                 setanimate(true);
             } else {
                 setanimate(false);

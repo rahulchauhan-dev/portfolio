@@ -16,7 +16,7 @@ const Projects = ({ id }) => {
         var projectdiv = document.getElementById("projects");
 
         window.addEventListener("scroll", () => {
-            if (window.pageYOffset <= projectdiv.offsetTop) {
+            if (window.pageYOffset <= projectdiv.offsetTop && window.pageYOffset >= projectdiv.offsetHeight) {
                 setanimate(true);
             } else {
                 setanimate(false);

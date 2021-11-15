@@ -17,7 +17,7 @@ const Contact = ({ id }) => {
         var contactdiv = document.getElementById("contact");
 
         window.addEventListener("scroll", () => {
-            if (window.pageYOffset <= contactdiv.offsetTop) {
+            if (window.pageYOffset <= contactdiv.offsetTop && window.pageYOffset >= contactdiv.offsetHeight) {
                 setanimate(true);
             } else {
                 setanimate(false);
