@@ -73,7 +73,7 @@ const Landing = () => {
                                 to="contact"
                                 spy={true}
                                 smooth={true}
-                                offset={-125}
+                                offset={-10}
                                 duration={200}>
                                 <Nav.Link eventKey="4">Contact</Nav.Link></Link>
                         </Nav.Item>

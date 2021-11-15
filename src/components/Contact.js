@@ -15,7 +15,7 @@ const Contact = ({ id }) => {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.pageYOffset >= 3000) {
+            if (window.pageYOffset >= 3300) {
                 setanimate(true);
             } else {
                 setanimate(false);
@@ -33,9 +33,9 @@ const Contact = ({ id }) => {
 
         <Container id={id} className="rounded bg-white shadow p-4  mt-5" style={{ minWidth: '500px' }}>
 
-            <h2 className="text-center" style={{ margin: '2rem' }}><RoughNotation style={{ padding: '15px' }} type="circle" show={animate} color="#0d47a1">
+            <h2 className="text-center" style={{ margin: '4rem' }}>
                 Get in Touch
-            </RoughNotation></h2>
+            </h2>
 
             <Container className="rounded shadow p-5 w-50" style={{ minWidth: 'fit-content' }}>
                 <h4 id="email" style={{ textDecoration: 'underline', textAlign: 'center', paddingBottom: '2rem' }}>{contact.email}</h4>
@@ -48,6 +48,7 @@ const Contact = ({ id }) => {
                 <img id="avatar" onClick={scrollToTop} style={{ width: '14rem', boxShadow: '0 5px 5px -5px #333' }} src={avatar} alt="herro" />
                 <p className="lead" style={{ marginTop: '30px' }}> Made with <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="noreferrer" target="_blank" style={{ textDecoration: 'none' }}>❤️</a> by<RoughNotation type="underline" show={animate} color="#b71c1c"> Rahul</RoughNotation></p>
             </Container>
+
 
         </Container>
     )
