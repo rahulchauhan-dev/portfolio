@@ -13,9 +13,10 @@ const Projects = ({ id }) => {
     const [animate, setanimate] = useState(false);
 
     useEffect(() => {
+        var projectdiv = document.getElementById("projects");
 
         window.addEventListener("scroll", () => {
-            if (window.pageYOffset >= 1115) {
+            if (window.pageYOffset <= projectdiv.offsetTop) {
                 setanimate(true);
             } else {
                 setanimate(false);
