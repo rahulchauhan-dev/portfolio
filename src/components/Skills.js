@@ -14,14 +14,12 @@ const Skills = ({ id }) => {
     useEffect(() => {
         var skilldiv = document.getElementById("skills");
         window.addEventListener("scroll", () => {
-            if (window.pageYOffset <= skilldiv.offsetTop && window.pageYOffset >= skilldiv.offsetHeight) {
+            if (window.pageYOffset >= skilldiv.offsetTop - 150) {
                 setanimate(true);
             } else {
                 setanimate(false);
             }
         });
-
-
 
 
     }, [])

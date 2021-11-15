@@ -15,9 +15,8 @@ const Contact = ({ id }) => {
 
     useEffect(() => {
         var contactdiv = document.getElementById("contact");
-
         window.addEventListener("scroll", () => {
-            if (window.pageYOffset <= contactdiv.offsetTop && window.pageYOffset >= contactdiv.offsetHeight) {
+            if (window.pageYOffset <= contactdiv.offsetTop) {
                 setanimate(true);
             } else {
                 setanimate(false);

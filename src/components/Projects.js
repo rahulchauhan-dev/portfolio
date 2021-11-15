@@ -14,9 +14,8 @@ const Projects = ({ id }) => {
 
     useEffect(() => {
         var projectdiv = document.getElementById("projects");
-
         window.addEventListener("scroll", () => {
-            if (window.pageYOffset <= projectdiv.offsetTop && window.pageYOffset >= projectdiv.offsetHeight) {
+            if (window.pageYOffset >= projectdiv.offsetTop - 150) {
                 setanimate(true);
             } else {
                 setanimate(false);
@@ -42,10 +41,6 @@ const Projects = ({ id }) => {
                 ))}
 
             </Row>
-
-
-
-
 
         </Container>
     )
