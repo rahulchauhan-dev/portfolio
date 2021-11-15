@@ -21,7 +21,7 @@ const data = [
         tech: "HTML | CSS | JavaScript"
     }, {
         title: "Get Tweets",
-        desc: "Get Twitter Timelines of Any User using Twitter API",
+        desc: "Get Twitter Timelines of Any User using Twitter Widget",
         link: "http://gettweets.surge.sh/",
         thumbnail: "https://i.imgur.com/eaQ4s7j.gif",
         tech: "HTML | CSS | JavaScript"
