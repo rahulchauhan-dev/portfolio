@@ -15,9 +15,16 @@ const Projects = ({ id }) => {
     useEffect(() => {
         var projectdiv = document.getElementById("projects");
         window.addEventListener("scroll", () => {
-            if (window.pageYOffset >= projectdiv.offsetTop - 150) {
+
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (window.pageYOffset <= projectdiv.offsetTop + 100)) {
+                // true for mobile device
                 setanimate(true);
-            } else {
+                return;
+            }
+            else if (window.pageYOffset >= projectdiv.offsetTop - 150) {
+                setanimate(true);
+            }
+            else {
                 setanimate(false);
             }
         });

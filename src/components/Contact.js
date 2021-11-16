@@ -16,9 +16,16 @@ const Contact = ({ id }) => {
     useEffect(() => {
         var contactdiv = document.getElementById("contact");
         window.addEventListener("scroll", () => {
-            if (window.pageYOffset >= contactdiv.offsetTop - 10) {
+
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (window.pageYOffset <= contactdiv.offsetTop + 150)) {
+                // true for mobile device
                 setanimate(true);
-            } else {
+                return;
+            }
+            else if (window.pageYOffset >= contactdiv.offsetTop - 150) {
+                setanimate(true);
+            }
+            else {
                 setanimate(false);
             }
         });

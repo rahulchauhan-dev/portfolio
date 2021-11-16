@@ -11,12 +11,20 @@ const Skills = ({ id }) => {
 
     const [animate, setanimate] = useState(false);
 
+
     useEffect(() => {
         var skilldiv = document.getElementById("skills");
         window.addEventListener("scroll", () => {
-            if (window.pageYOffset >= skilldiv.offsetTop - 150) {
+
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (window.pageYOffset <= skilldiv.offsetTop + 150)) {
+                // true for mobile device
                 setanimate(true);
-            } else {
+                return;
+            }
+            else if (window.pageYOffset >= skilldiv.offsetTop - 150) {
+                setanimate(true);
+            }
+            else {
                 setanimate(false);
             }
         });
