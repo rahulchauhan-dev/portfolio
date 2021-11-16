@@ -16,12 +16,7 @@ const Projects = ({ id }) => {
         var projectdiv = document.getElementById("projects");
         window.addEventListener("scroll", () => {
 
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                // true for mobile device
-                setanimate(true);
-                return;
-            }
-            else if (window.pageYOffset >= projectdiv.offsetTop - 150) {
+            if (window.pageYOffset >= projectdiv.offsetTop - 150) {
                 setanimate(true);
             }
             else {
