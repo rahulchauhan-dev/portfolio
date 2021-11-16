@@ -16,7 +16,7 @@ const Skills = ({ id }) => {
         var skilldiv = document.getElementById("skills");
         window.addEventListener("scroll", () => {
 
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (window.pageYOffset <= skilldiv.offsetTop + 150)) {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 // true for mobile device
                 setanimate(true);
                 return;

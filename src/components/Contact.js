@@ -17,7 +17,7 @@ const Contact = ({ id }) => {
         var contactdiv = document.getElementById("contact");
         window.addEventListener("scroll", () => {
 
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (window.pageYOffset <= contactdiv.offsetTop + 150)) {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 // true for mobile device
                 setanimate(true);
                 return;
