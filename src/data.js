@@ -20,11 +20,11 @@ const data = [
         thumbnail: "https://i.imgur.com/T3trLtT.gif",
         tech: "HTML | CSS | JavaScript"
     }, {
-        title: "Get Tweets",
-        desc: "Get Twitter Timelines of Any User using Twitter Widget",
-        link: "http://gettweets.surge.sh/",
-        thumbnail: "https://i.imgur.com/eaQ4s7j.gif",
-        tech: "HTML | CSS | JavaScript"
+        title: "HowTo Community",
+        desc: "Blog Website + Admin Panel inspired by DevCommunity",
+        link: "https://howtocom.herokuapp.com/",
+        thumbnail: "https://i.imgur.com/4VuxFfI.gif",
+        tech: "React | MongoDB | Node.js | Redux"
     }, {
         title: "Get Qoutes",
         desc: "Random Quotes with Author name generator using API",
